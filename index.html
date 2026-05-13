@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nigar Sweets | Festive Heritage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-container": "#004d2a",
+              "outline-variant": "#e3beb8",
+              "tertiary-fixed": "#9df6b9",
+              "on-tertiary-fixed-variant": "#00522d",
+              "on-primary": "#ffffff",
+              "inverse-surface": "#30312c",
+              "on-secondary-fixed": "#241a00",
+              "primary-fixed-dim": "#ffb4a8",
+              "on-background": "#1b1c17",
+              "surface-variant": "#e4e3db",
+              "primary-container": "#8b0000",
+              error: "#ba1a1a",
+              surface: "#fbf9f1",
+              "on-secondary": "#ffffff",
+              "surface-dim": "#dcdad2",
+              "primary-fixed": "#ffdad4",
+              "on-secondary-container": "#745c00",
+              "on-primary-fixed-variant": "#920703",
+              primary: "#610000",
+              "surface-container-highest": "#e4e3db",
+              "on-tertiary-container": "#6ac089",
+              "error-container": "#ffdad6",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed": "#410000",
+              "on-surface-variant": "#5a403c",
+              "surface-container-high": "#eae8e0",
+              "tertiary-fixed-dim": "#81d99f",
+              background: "#fbf9f1",
+              "on-error": "#ffffff",
+              "on-tertiary-fixed": "#00210f",
+              "secondary-fixed": "#ffe088",
+              "surface-tint": "#b52619",
+              "surface-container": "#f0eee6",
+              "on-surface": "#1b1c17",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-low": "#f5f4ec",
+              "surface-bright": "#fbf9f1",
+              tertiary: "#00341a",
+              "secondary-fixed-dim": "#e9c349",
+              "on-primary-container": "#ff907f",
+              "inverse-primary": "#ffb4a8",
+              "on-error-container": "#93000a",
+              "secondary-container": "#fed65b",
+              "inverse-on-surface": "#f3f1e9",
+              "on-secondary-fixed-variant": "#574500",
+              secondary: "#735c00",
+              outline: "#8e706b",
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+            spacing: {
+              gutter: "24px",
+              "margin-desktop": "40px",
+              unit: "8px",
+              "margin-mobile": "16px",
+              "container-max-width": "1200px",
+            },
+            fontFamily: {
+              "headline-lg": ["Playfair Display"],
+              "display-lg": ["Playfair Display"],
+              "headline-md": ["Playfair Display"],
+              "headline-lg-mobile": ["Playfair Display"],
+              "body-md": ["Plus Jakarta Sans"],
+              "body-lg": ["Plus Jakarta Sans"],
+              "label-md": ["Plus Jakarta Sans"],
+              "label-sm": ["Plus Jakarta Sans"],
+            },
+            fontSize: {
+              "display-lg": ["48px", { lineHeight: "1.1", fontWeight: "700" }],
+              "headline-lg": ["32px", { lineHeight: "1.2", fontWeight: "700" }],
+              "headline-lg-mobile": ["28px", { lineHeight: "1.2", fontWeight: "700" }],
+              "headline-md": ["24px", { lineHeight: "1.3", fontWeight: "600" }],
+              "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+              "body-md": ["16px", { lineHeight: "1.5", fontWeight: "400" }],
+              "label-md": ["14px", { lineHeight: "1.2", letterSpacing: "0.05em", fontWeight: "600" }],
+              "label-sm": ["12px", { lineHeight: "1.2", fontWeight: "500" }],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .page-bg {
+        background-image: radial-gradient(circle at 10% 10%, rgba(254, 214, 91, 0.14), transparent 30%),
+          radial-gradient(circle at 90% 20%, rgba(227, 190, 184, 0.12), transparent 35%),
+          radial-gradient(circle at 50% 85%, rgba(97, 0, 0, 0.07), transparent 25%),
+          linear-gradient(135deg, rgba(251, 249, 241, 1), rgba(248, 245, 237, 1));
+      }
+      .pattern-divider::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(to right, rgba(142, 112, 107, 0), rgba(142, 112, 107, 0.35), rgba(142, 112, 107, 0));
+      }
+      .pattern-divider::after {
+        content: "\2731";
+        display: block;
+        position: relative;
+        top: -22px;
+        width: 40px;
+        margin: 0 auto;
+        color: #735c00;
+        font-size: 24px;
+        background: #fbf9f1;
+      }
+      .hero-grid {
+        background: radial-gradient(circle at 20% 20%, rgba(255, 218, 212, 0.25), transparent 25%),
+          radial-gradient(circle at 80% 30%, rgba(254, 214, 91, 0.16), transparent 18%),
+          linear-gradient(180deg, rgba(251, 249, 241, 1), rgba(240, 238, 230, 1));
+      }
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+  </head>
+  <body class="bg-background text-on-background antialiased page-bg">
+    <header class="fixed top-0 left-0 w-full z-50 bg-primary-container shadow-md border-b-4 border-secondary-fixed">
+      <div class="mx-auto flex max-w-container-max-width items-center justify-between px-gutter h-16">
+        <a href="#home" class="font-headline-lg text-headline-lg text-on-primary tracking-tight">Nigar Sweets</a>
+        <nav class="hidden md:flex items-center gap-8 text-on-primary">
+          <a href="#home" class="hover:text-secondary-fixed transition-colors flex items-center">Home</a>
+          <a href="our_products/code.html" class="hover:text-secondary-fixed transition-colors flex items-center">Products</a>
+          <a href="meet_the_creator/code.html" class="hover:text-secondary-fixed transition-colors flex items-center">Creator</a>
+          <a href="our_branches/code.html" class="hover:text-secondary-fixed transition-colors flex items-center">Branches</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Mobile Bottom Nav (consistent order) -->
+    <nav class="md:hidden bg-surface border-t border-outline-variant/30 shadow-[0_-4px_16px_rgba(139,0,0,0.06)] fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 pb-safe rounded-t-xl">
+      <a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors active:scale-95 transition-transform duration-200 p-2 rounded-xl" href="#home">
+        <span class="material-symbols-outlined mb-1">home</span>
+        <span class="font-label-md text-label-sm">Home</span>
+      </a>
+      <a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors active:scale-95 transition-transform duration-200 p-2 rounded-xl" href="our_products/code.html">
+        <span class="material-symbols-outlined mb-1">bakery_dining</span>
+        <span class="font-label-md text-label-sm">Products</span>
+      </a>
+      <a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors active:scale-95 transition-transform duration-200 p-2 rounded-xl" href="meet_the_creator/code.html">
+        <span class="material-symbols-outlined mb-1">person</span>
+        <span class="font-label-md text-label-sm">Creator</span>
+      </a>
+      <a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors active:scale-95 transition-transform duration-200 p-2 rounded-xl" href="our_branches/code.html">
+        <span class="material-symbols-outlined mb-1">location_on</span>
+        <span class="font-label-md text-label-sm">Branches</span>
+      </a>
+    </nav>
+      </div>
+    </header>
+
+    <main class="pt-24">
+      <section id="home" class="relative overflow-hidden py-20 lg:py-28">
+        <div class="mx-auto max-w-container-max-width px-gutter lg:px-margin-desktop">
+          <div class="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] items-center">
+            <div class="space-y-8">
+              <span class="inline-flex rounded-full bg-secondary-container px-4 py-2 text-label-sm font-label-sm text-on-secondary-container shadow-sm">Festive Heritage Collection</span>
+              <h1 class="font-display-lg text-display-lg text-primary max-w-3xl">Authentic Pakistani sweets crafted for special moments.</h1>
+              <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Celebrate every occasion with richly flavored mithai made from premium ingredients and hand-finished with traditional care. Elegant, warm, and distinctly festive.</p>
+              <div class="flex flex-col gap-4 sm:flex-row items-start sm:items-center">
+                <a href="our_products/code.html" class="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-label-md font-label-md text-on-primary shadow-lg shadow-primary/20 hover:bg-[#710000] transition-colors">Explore Our Sweets</a>
+              </div>
+            </div>
+            <div class="relative rounded-[32px] bg-surface-container p-4 shadow-[0_24px_80px_rgba(97,0,0,0.12)]">
+              <div class="absolute inset-0 rounded-[32px] bg-[radial-gradient(circle_at_top_left,_rgba(254,_214,_91,_0.24),_transparent_22%),_radial-gradient(circle_at_bottom_right,_rgba(97,_0,_0,_0.1),_transparent_35%)]"></div>
+              <img
+                src="bb.jpeg"
+                alt="Brand Owner - Nigar Sweets"
+                loading="lazy"
+                class="relative z-10 w-full rounded-[28px] object-cover h-[400px] mx-auto"
+              />
+              <p class="relative z-10 mt-4 text-center font-label-md text-on-surface-variant">Nigar Sweets owner</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    </main>
+
+    <footer class="border-t border-outline-variant/20 bg-surface text-on-surface mt-12">
+      <div class="mx-auto max-w-container-max-width px-gutter lg:px-margin-desktop py-10 text-center">
+        <p class="font-headline-md text-headline-md text-primary">Nigar Sweets</p>
+        <p class="font-body-md text-body-md text-on-surface-variant mt-2">A warm celebration of Pakistani confectionery, handcrafted for your special moments.</p>
+      </div>
+    </footer>
+  </body>
+</html>

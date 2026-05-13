@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nigar Sweets - Products</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#004d2a",
+                    "outline-variant": "#e3beb8",
+                    "tertiary-fixed": "#9df6b9",
+                    "on-tertiary-fixed-variant": "#00522d",
+                    "on-primary": "#ffffff",
+                    "inverse-surface": "#30312c",
+                    "on-secondary-fixed": "#241a00",
+                    "primary-fixed-dim": "#ffb4a8",
+                    "on-background": "#1b1c17",
+                    "surface-variant": "#e4e3db",
+                    "primary-container": "#8b0000",
+                    "error": "#ba1a1a",
+                    "surface": "#fbf9f1",
+                    "on-secondary": "#ffffff",
+                    "surface-dim": "#dcdad2",
+                    "primary-fixed": "#ffdad4",
+                    "on-secondary-container": "#745c00",
+                    "on-primary-fixed-variant": "#920703",
+                    "primary": "#610000",
+                    "surface-container-highest": "#e4e3db",
+                    "on-tertiary-container": "#6ac089",
+                    "error-container": "#ffdad6",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed": "#410000",
+                    "on-surface-variant": "#5a403c",
+                    "surface-container-high": "#eae8e0",
+                    "tertiary-fixed-dim": "#81d99f",
+                    "background": "#fbf9f1",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed": "#00210f",
+                    "secondary-fixed": "#ffe088",
+                    "surface-tint": "#b52619",
+                    "surface-container": "#f0eee6",
+                    "on-surface": "#1b1c17",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#f5f4ec",
+                    "surface-bright": "#fbf9f1",
+                    "tertiary": "#00341a",
+                    "secondary-fixed-dim": "#e9c349",
+                    "on-primary-container": "#ff907f",
+                    "inverse-primary": "#ffb4a8",
+                    "on-error-container": "#93000a",
+                    "secondary-container": "#fed65b",
+                    "inverse-on-surface": "#f3f1e9",
+                    "on-secondary-fixed-variant": "#574500",
+                    "secondary": "#735c00",
+                    "outline": "#8e706b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "margin-desktop": "40px",
+                    "unit": "8px",
+                    "margin-mobile": "16px",
+                    "container-max-width": "1200px"
+            },
+            "fontFamily": {
+                    "label-sm": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-md": [
+                            "Playfair Display"
+                    ],
+                    "headline-lg-mobile": [
+                            "Playfair Display"
+                    ],
+                    "label-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-lg": [
+                            "Playfair Display"
+                    ],
+                    "display-lg": [
+                            "Playfair Display"
+                    ],
+                    "body-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "body-lg": [
+                            "Plus Jakarta Sans"
+                    ]
+            },
+            "fontSize": {
+                    "label-sm": [
+                            "12px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-lg-mobile": [
+                            "28px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "label-md": [
+                            "14px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "display-lg": [
+                            "48px",
+                            {
+                                    "lineHeight": "1.1",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.5",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+        },
+        },
+      }
+    </script>
+<style>
+        /* Utility to hide scrollbar but keep functionality if needed */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        /* Subtle mandala background watermark pattern */
+        .bg-mandala-watermark {
+            background-image: radial-gradient(circle at 50% 50%, rgba(227, 190, 184, 0.15) 0%, transparent 60%),
+                              radial-gradient(circle at 100% 0%, rgba(254, 214, 91, 0.1) 0%, transparent 40%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pt-[80px] pb-[96px] antialiased bg-mandala-watermark">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50">
+  <div class="mx-auto flex max-w-container-max-width items-center justify-between px-gutter h-16 bg-primary-container shadow-md border-b-4 border-secondary-fixed">
+    <div class="flex items-center gap-4">
+      <button aria-label="Menu" class="scale-95 active:scale-90 transition-transform hover:opacity-80 flex items-center justify-center h-10 w-10 rounded-full">
+        <span class="material-symbols-outlined text-on-primary">menu</span>
+      </button>
+      <a href="../index.html" class="font-headline-lg text-headline-lg text-on-primary tracking-tight">Nigar Sweets</a>
+    </div>
+                <nav class="hidden md:flex items-center gap-8 text-on-primary">
+                        <a href="../index.html" class="hover:text-secondary-fixed transition-colors">Home</a>
+                        <a href="code.html" class="hover:text-secondary-fixed transition-colors">Products</a>
+                        <a href="../meet_the_creator/code.html" class="hover:text-secondary-fixed transition-colors">Creator</a>
+                        <a href="../our_branches/code.html" class="hover:text-secondary-fixed transition-colors">Branches</a>
+                </nav>
+    <div>
+      <button aria-label="Shopping Bag" class="scale-95 active:scale-90 transition-transform hover:opacity-80 flex items-center justify-center h-10 w-10 rounded-full">
+        <span class="material-symbols-outlined text-on-primary">shopping_bag</span>
+      </button>
+    </div>
+  </div>
+</header>
+<!-- Main Content Canvas -->
+<main class="max-w-container-max-width mx-auto px-gutter md:px-margin-desktop">
+<!-- Hero Header -->
+<section class="mt-8 md:mt-12 mb-10 text-center">
+<h2 class="font-display-lg text-display-lg text-primary mb-3">Our Collections</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Discover the authentic taste of tradition. Handcrafted daily with premium ingredients to bring warmth and joy to your festive moments.
+            </p>
+<!-- Traditional Accent / Pattern Divider -->
+<div class="flex items-center justify-center gap-4 mt-8 opacity-60">
+<div class="h-px w-16 bg-outline"></div>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<div class="h-px w-16 bg-outline"></div>
+</div>
+</section>
+<!-- Products Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-unit*3 md:gap-6 mb-16">
+<!-- Card 1: Feature Card (Gulab Jamun) - Spans 8 columns on desktop -->
+<article class="md:col-span-8 bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(139,0,0,0.08)] overflow-hidden group border border-outline-variant/20 hover:shadow-[0_8px_24px_rgba(139,0,0,0.12)] transition-shadow duration-300 flex flex-col md:flex-row relative">
+<!-- Tag -->
+<div class="absolute top-4 left-4 z-10">
+<span class="bg-tertiary-container text-on-primary rounded-full px-4 py-1.5 font-label-md text-label-md shadow-sm">Bestseller</span>
+</div>
+<div class="w-full md:w-1/2 h-64 md:h-full overflow-hidden bg-surface-container-low">
+<img alt="Gulab Jamun" loading="lazy" style="aspect-ratio:16/9; object-fit:cover;" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A high-end, mouth-watering food photography shot of traditional Pakistani Gulab Jamun. The dark, glossy red-brown sweet spheres are soaking in a translucent sugary syrup within an ornate, antique brass bowl. The setting is luxurious and warm, illuminated by soft, natural light that highlights the syrupy shine. The background features a subtle, out-of-focus traditional mandala pattern in deep warm cream and soft gold, evoking a rich 'Festive Heritage' aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuClD2YbJdQimsXijXCv6q1ivnn55YileHQx8JR2DlsMu1EPQhECRLgaoByYW3L4hQOpI9rRXlLOsplbXeY8VACPXhRplqe-iOVWyn1oAlZYy-z-kyZyDIqMfb8yPO83A3uNxWTwaL9B-3q2106uLUC0taXRjQJDYKB9I9O_WPLo2teJfBkInaEWE_VNqTSFWNGfBGq2yEXT28tFGivTpKrmpX1Hhp2-GzqZ1kTAeekYkRxw6fRyk5aCNwczPbFENIRJ0ekaQs0MRjBe"/>
+</div>
+<div class="w-full md:w-1/2 p-6 md:p-8 flex flex-col justify-center bg-surface-container-lowest">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-lg text-headline-lg text-primary">Gulab Jamun</h3>
+<span class="font-headline-md text-headline-md text-tertiary-container">Rs. 850</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                        Our signature delicacy. Melt-in-the-mouth, golden-brown spheres made from rich khoya, deep-fried to perfection, and immersed in an aromatic saffron and cardamom-infused sugar syrup.
+                    </p>
+<button class="bg-primary text-on-primary font-label-md text-label-md py-3 px-6 rounded-lg w-fit hover:bg-primary/90 transition-colors shadow-sm flex items-center gap-2 group-hover:-translate-y-0.5 duration-200">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                        Add to Box
+                    </button>
+</div>
+</article>
+<!-- Card 2: Tall Card (Jalebi) - Spans 4 columns on desktop -->
+<article class="md:col-span-4 bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(139,0,0,0.08)] overflow-hidden group border border-outline-variant/20 hover:shadow-[0_8px_24px_rgba(139,0,0,0.12)] transition-shadow duration-300 flex flex-col relative">
+<!-- Tag -->
+<div class="absolute top-4 left-4 z-10">
+<span class="bg-secondary-container text-on-secondary-container rounded-full px-4 py-1.5 font-label-md text-label-md shadow-sm border border-secondary/20">Festive Box</span>
+</div>
+<div class="w-full h-56 overflow-hidden bg-surface-container-low">
+<img alt="Jalebi" loading="lazy" style="aspect-ratio:16/9; object-fit:cover;" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A vibrant, close-up culinary photograph of fresh, crispy Pakistani Jalebi. The intricate, bright orange, syrupy spirals are artfully arranged on a pristine white ceramic plate with a subtle gold rim. The lighting is bright and warm, casting soft shadows that emphasize the texture and crunch of the sweet. The background is a clean, warm cream color with a hint of royal red in the scattered rose petals, capturing a modern, high-quality festive atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXyAKTM2G9i6TvRHQur37G5QxNTXWjSJjBmCO7r3-fBMj6GD76GBy_gqvntY6aQSh7lQ_yUT-sSEfTFUGd7tMC9ElVvOzAsjNB0AhU8c2JSSBkPDtra9k_kPtGxNy5SZSMho0Y3X27H5YDfGrvQ0C3IfrcGjAzZea73ATIzSXymfRAfq4lLJFVdORcSELHqpwnvmY2s5fvdUTAiJ-DWbrQgrNHYIs7HZShzrsvjx_h7keK1KMhxRRnKGIW6O7ia3nq0woiT2_rBEzN"/>
+</div>
+<div class="p-5 md:p-6 flex flex-col flex-grow bg-surface-container-lowest">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-primary">Crispy Jalebi</h3>
+<span class="font-headline-md text-headline-md text-tertiary-container">Rs. 600</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                        Intricate, golden spirals of fermented batter, deep-fried until perfectly crisp and soaked in a warm, fragrant sugar syrup. A crunchy, juicy delight.
+                    </p>
+<button class="border border-secondary text-primary font-label-md text-label-md py-2.5 px-4 rounded-lg w-full hover:bg-secondary/10 transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">add</span>
+                        Add to Box
+                    </button>
+</div>
+</article>
+<!-- Card 3: Standard Card (Barfi) - Spans 6 columns on desktop -->
+<article class="md:col-span-6 bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(139,0,0,0.08)] overflow-hidden group border border-outline-variant/20 hover:shadow-[0_8px_24px_rgba(139,0,0,0.12)] transition-shadow duration-300 flex flex-col sm:flex-row">
+<div class="w-full sm:w-2/5 h-48 sm:h-full overflow-hidden bg-surface-container-low">
+<img alt="Barfi" loading="lazy" style="aspect-ratio:16/9; object-fit:cover;" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="An elegant, minimalist food photo of traditional Pakistani Barfi cut into perfect diamond shapes. The smooth, creamy white sweets are elegantly decorated with delicate edible silver leaf (varq) and crushed bright green pistachios. They rest on a smooth, lightly textured warm cream surface. The lighting is soft and diffused, creating a premium, almost jewelry-like presentation of the sweets, aligning with a high-end, modern-tactile heritage design aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBf9KS--N96zROCz9n5ceCoGq9jLF4HABa3xoEoYvrLARufZS6Itdst64RZXklKBooxP1lxzUNpDsKNJm5rrtrHheFJ3Lyqz01_0vaZrE0uyRTLskAS7QaOhxiaUGVt7_5skpczw5YpSecVObvo3ITudw4kgceA4hvxWLIjAjb8XYWZahPWDjtFElqRyK2PJiv8ieONIovrgL_886xOyoB3nxOh7ovhpa0xRogyn2eD1gzXebJ4MvIl09GeXTBVw_kcNGh0_F18Ghq"/>
+</div>
+<div class="w-full sm:w-3/5 p-5 flex flex-col justify-between bg-surface-container-lowest">
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-primary">Pista Barfi</h3>
+<span class="font-label-md text-label-md text-tertiary-container font-bold">Rs. 950</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-4">
+                            Classic milk fudge squares, luxuriously dense and creamy. Delicately flavored with cardamom, garnished with premium pistachios, and adorned with edible silver leaf.
+                        </p>
+</div>
+<button class="border border-outline-variant text-primary font-label-md text-label-md py-2 px-4 rounded-lg w-fit hover:border-primary hover:bg-surface-container-low transition-colors">
+                        Add to Box
+                    </button>
+</div>
+</article>
+<!-- Card 4: Standard Card (Rasgulla) - Spans 6 columns on desktop -->
+<article class="md:col-span-6 bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(139,0,0,0.08)] overflow-hidden group border border-outline-variant/20 hover:shadow-[0_8px_24px_rgba(139,0,0,0.12)] transition-shadow duration-300 flex flex-col sm:flex-row relative">
+<!-- Tag -->
+<div class="absolute top-3 left-3 sm:left-auto sm:right-3 z-10">
+<span class="bg-surface text-tertiary-container rounded-full px-3 py-1 font-label-sm text-label-sm shadow-sm border border-tertiary-container/30">Low Sugar Option</span>
+</div>
+<div class="w-full sm:w-2/5 h-48 sm:h-full overflow-hidden bg-surface-container-low sm:order-last">
+<img alt="Rasgulla" loading="lazy" style="aspect-ratio:16/9; object-fit:cover;" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A refreshing, high-key food photography image of soft, spongy Pakistani Rasgulla floating in a clear, sweet rose-water syrup. The pristine white, spherical sweets are served in a modern, shallow glass dish that sits on a soft cream linen cloth. The lighting is bright and airy, highlighting the porous texture of the sweets and the crystalline clarity of the syrup. Subtle hints of deep royal red are introduced through a few delicate rose strands, maintaining the elegant festive color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTVRq0mpIoXMfbTE44cbPWIZPJGGAEDXofzAYe2aD78FQIHi0j9Pplt3Zb7E_7Xx_GDUPvoU4e1apr45nB2fdUgdntO5Uo7xiuCuShbzUKrwfEtTOwT9v_owvG9c8gS0UbXtDj_90ckgRic1UpWE9JClnjabdLchGBuEkRhACzWOvLVwshqYDLo_ZiM6SnpjRP89HYMaQSkatm6lhqhOe3IL-3IcZHODAE4S8JQjeJ0A4IRZQql8AzXitN5AdvgZQSGHGMvPh1NdcR"/>
+</div>
+<div class="w-full sm:w-3/5 p-5 flex flex-col justify-between bg-surface-container-lowest">
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-primary">Classic Rasgulla</h3>
+<span class="font-label-md text-label-md text-tertiary-container font-bold">Rs. 800</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-4">
+                            Soft, spongy, and incredibly refreshing. These delicate cottage cheese dumplings are cooked in a light, rose-scented sugar syrup until completely saturated and cloud-like.
+                        </p>
+</div>
+<button class="border border-outline-variant text-primary font-label-md text-label-md py-2 px-4 rounded-lg w-fit hover:border-primary hover:bg-surface-container-low transition-colors">
+                        Add to Box
+                    </button>
+</div>
+</article>
+</div>
+</main>
+<!-- BottomNavBar (Mobile) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 pb-safe bg-surface dark:bg-inverse-surface border-t border-outline-variant/30 shadow-[0_-4px_16px_rgba(139,0,0,0.06)] rounded-t-xl md:hidden">
+        <a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-high transition-colors active:scale-95 transition-transform duration-200 rounded-xl px-3 py-1" href="../index.html">
+                <span class="material-symbols-outlined mb-0.5">home</span>
+                <span class="font-label-md text-label-md text-[11px]">Home</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-primary dark:text-primary-fixed-dim font-bold bg-secondary-container/20 rounded-xl px-3 py-1 active:scale-95 transition-transform duration-200" href="code.html">
+                <span class="material-symbols-outlined mb-0.5" style="font-variation-settings: 'FILL' 1;">bakery_dining</span>
+                <span class="font-label-md text-label-md text-[11px]">Products</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-high transition-colors active:scale-95 transition-transform duration-200 rounded-xl px-3 py-1" href="../meet_the_creator/code.html">
+                <span class="material-symbols-outlined mb-0.5">person</span>
+                <span class="font-label-md text-label-md text-[11px]">Creator</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-high transition-colors active:scale-95 transition-transform duration-200 rounded-xl px-3 py-1" href="../our_branches/code.html">
+                <span class="material-symbols-outlined mb-0.5">location_on</span>
+                <span class="font-label-md text-label-md text-[11px]">Branches</span>
+        </a>
+</nav>
+<script src="../assets/main.js"></script>
+</body></html>

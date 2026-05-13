@@ -1,0 +1,275 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Creator - Nigar Sweets</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#004d2a",
+                    "outline-variant": "#e3beb8",
+                    "tertiary-fixed": "#9df6b9",
+                    "on-tertiary-fixed-variant": "#00522d",
+                    "on-primary": "#ffffff",
+                    "inverse-surface": "#30312c",
+                    "on-secondary-fixed": "#241a00",
+                    "primary-fixed-dim": "#ffb4a8",
+                    "on-background": "#1b1c17",
+                    "surface-variant": "#e4e3db",
+                    "primary-container": "#8b0000",
+                    "error": "#ba1a1a",
+                    "surface": "#fbf9f1",
+                    "on-secondary": "#ffffff",
+                    "surface-dim": "#dcdad2",
+                    "primary-fixed": "#ffdad4",
+                    "on-secondary-container": "#745c00",
+                    "on-primary-fixed-variant": "#920703",
+                    "primary": "#610000",
+                    "surface-container-highest": "#e4e3db",
+                    "on-tertiary-container": "#6ac089",
+                    "error-container": "#ffdad6",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed": "#410000",
+                    "on-surface-variant": "#5a403c",
+                    "surface-container-high": "#eae8e0",
+                    "tertiary-fixed-dim": "#81d99f",
+                    "background": "#fbf9f1",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed": "#00210f",
+                    "secondary-fixed": "#ffe088",
+                    "surface-tint": "#b52619",
+                    "surface-container": "#f0eee6",
+                    "on-surface": "#1b1c17",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#f5f4ec",
+                    "surface-bright": "#fbf9f1",
+                    "tertiary": "#00341a",
+                    "secondary-fixed-dim": "#e9c349",
+                    "on-primary-container": "#ff907f",
+                    "inverse-primary": "#ffb4a8",
+                    "on-error-container": "#93000a",
+                    "secondary-container": "#fed65b",
+                    "inverse-on-surface": "#f3f1e9",
+                    "on-secondary-fixed-variant": "#574500",
+                    "secondary": "#735c00",
+                    "outline": "#8e706b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "margin-desktop": "40px",
+                    "unit": "8px",
+                    "margin-mobile": "16px",
+                    "container-max-width": "1200px"
+            },
+            "fontFamily": {
+                    "label-sm": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-md": [
+                            "Playfair Display"
+                    ],
+                    "headline-lg-mobile": [
+                            "Playfair Display"
+                    ],
+                    "label-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-lg": [
+                            "Playfair Display"
+                    ],
+                    "display-lg": [
+                            "Playfair Display"
+                    ],
+                    "body-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "body-lg": [
+                            "Plus Jakarta Sans"
+                    ]
+            },
+            "fontSize": {
+                    "label-sm": [
+                            "12px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-lg-mobile": [
+                            "28px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "label-md": [
+                            "14px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "display-lg": [
+                            "48px",
+                            {
+                                    "lineHeight": "1.1",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.5",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        /* Subtle mandala background watermark */
+        .bg-mandala {
+            background-image: url('data:image/svg+xml;utf8,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 0 L100 50 L50 100 L0 50 Z" fill="none" stroke="%23 fed65b" stroke-width="0.5" stroke-opacity="0.2"/></svg>');
+            background-size: 200px;
+            background-repeat: repeat;
+        }
+        
+        /* Ensure content is visible above bottom nav on mobile */
+        @media (max-width: 767px) {
+            .main-content {
+                padding-bottom: calc(80px + env(safe-area-inset-bottom));
+            }
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md antialiased bg-mandala">
+<!-- TopAppBar (Web & Mobile) -->
+<header class="bg-primary-container shadow-md border-b-4 border-secondary-fixed fixed top-0 left-0 w-full z-50">
+        <div class="mx-auto flex max-w-container-max-width items-center justify-between px-gutter h-16">
+                <div class="flex items-center gap-4">
+                        <button class="text-on-primary hover:opacity-80 transition-opacity scale-95 active:scale-90 transition-transform p-2 -ml-2 rounded-full">
+                                <span class="material-symbols-outlined" data-icon="menu">menu</span>
+                        </button>
+                        <a href="../index.html" class="font-headline-lg text-headline-lg text-on-primary tracking-tight truncate">Nigar Sweets</a>
+                </div>
+                <nav class="hidden md:flex items-center gap-8 text-on-primary">
+                        <a href="../index.html" class="hover:text-secondary-fixed transition-colors">Home</a>
+                        <a href="../our_products/code.html" class="hover:text-secondary-fixed transition-colors">Products</a>
+                        <a href="code.html" class="hover:text-secondary-fixed transition-colors">Creator</a>
+                        <a href="../our_branches/code.html" class="hover:text-secondary-fixed transition-colors">Branches</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                        <button class="text-on-primary hover:opacity-80 transition-opacity scale-95 active:scale-90 transition-transform p-2 -mr-2 rounded-full">
+                                <span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+                        </button>
+                </div>
+        </div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pt-24 px-gutter md:px-margin-desktop max-w-container-max-width mx-auto w-full main-content">
+<!-- Creator Section -->
+<section class="flex flex-col md:flex-row items-center justify-center gap-12 py-16 md:py-24">
+  <!-- Profile Image Container -->
+  <div class="relative w-80 h-80 md:w-96 md:h-96 flex-shrink-0">
+    <!-- Decorative background elements -->
+    <div class="absolute inset-0 bg-secondary-container rounded-full transform translate-x-4 translate-y-4 opacity-50"></div>
+    <div class="absolute inset-0 border-2 border-primary-container rounded-full transform -translate-x-2 -translate-y-2"></div>
+    <!-- Main Image -->
+    <div class="relative w-full h-full rounded-full overflow-hidden shadow-[0_8px_24px_rgba(139,0,0,0.12)] border-4 border-surface">
+      <img alt="Creator - Amar Jalil" loading="lazy" class="w-full h-full object-cover" src="../aa.jpeg">
+    </div>
+  </div>
+  <!-- Content Container -->
+  <div class="max-w-xl text-center md:text-left space-y-6">
+    <!-- Pattern Divider -->
+    <div class="md:hidden flex items-center justify-center space-x-4 w-full">
+      <div class="h-px bg-secondary flex-grow opacity-30"></div>
+      <span class="material-symbols-outlined text-secondary text-sm">flare</span>
+      <div class="h-px bg-secondary flex-grow opacity-30"></div>
+    </div>
+    <div class="space-y-2">
+      <span class="font-label-md text-label-md text-secondary uppercase tracking-widest inline-block mb-2">The Creator</span>
+      <h2 class="font-display-lg text-display-lg text-primary">Amar Jalil</h2>
+    </div>
+    <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">Amar Jalil is a passionate young student in Gulabad who designed this website to celebrate the heritage of Pakistani sweets. <span class="block mt-2 text-sm text-secondary">(Website Creator)</span></p>
+    <!-- Pattern Divider Desktop -->
+    <div class="hidden md:flex items-center justify-start space-x-4 w-full max-w-xs pt-4">
+      <span class="material-symbols-outlined text-secondary text-sm">flare</span>
+      <div class="h-px bg-secondary flex-grow opacity-30"></div>
+    </div>
+  </div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden bg-surface dark:bg-inverse-surface border-t border-outline-variant/30 shadow-[0_-4px_16px_rgba(139,0,0,0.06)] fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 pb-safe rounded-t-xl">
+        <a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-high transition-colors active:scale-95 transition-transform duration-200 p-2 rounded-xl" href="../index.html">
+                <span class="material-symbols-outlined mb-1" data-icon="home">home</span>
+                <span class="font-label-md text-label-sm">Home</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-high transition-colors active:scale-95 transition-transform duration-200 p-2 rounded-xl" href="../our_products/code.html">
+                <span class="material-symbols-outlined mb-1" data-icon="bakery_dining">bakery_dining</span>
+                <span class="font-label-md text-label-sm">Products</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-primary dark:text-primary-fixed-dim font-bold bg-secondary-container/20 rounded-xl px-3 py-1 hover:bg-surface-container-high transition-colors active:scale-95 transition-transform duration-200" href="code.html">
+                <span class="material-symbols-outlined fill-icon mb-1" data-icon="person">person</span>
+                <span class="font-label-md text-label-sm">Creator</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-high transition-colors active:scale-95 transition-transform duration-200 p-2 rounded-xl" href="../our_branches/code.html">
+                <span class="material-symbols-outlined mb-1" data-icon="location_on">location_on</span>
+                <span class="font-label-md text-label-sm">Branches</span>
+        </a>
+</nav>
+<script src="../assets/main.js"></script>
+</body>
+</html>
+
+
+</body></html>
